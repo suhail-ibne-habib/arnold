@@ -118,9 +118,12 @@ video.hero-video{
 }
 
 .testimonial-wrapper{
-    background-color: #2A2A2A;
     padding: 20px 40px;
     border-radius: 20px;
+}
+
+.slick-center .testimonial-wrapper{
+    background-color: #2A2A2A;
 }
 
 .testimonial .testimonial-header{
