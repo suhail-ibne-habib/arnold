@@ -107,7 +107,38 @@ video.hero-video{
     z-index: -1; /* Moves the video behind other content */
 }
 
+/* Icon boxes  */
+.icon-box-icon{
+    width: 60px;
+    height: 60px;
+    background-image: url('./assets/images/web_development.png');
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box-icon img{
+    width: 30px;
+    height: 30px;
+}
+
 /* Testimonial */
+.testimonial-bg-heading{
+    background-image: url('./assets/images/Rectangle\ 20.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .testimonial{
     padding-left: 0px;
     padding-right: 0px;
