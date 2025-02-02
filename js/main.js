@@ -27,3 +27,16 @@ if (testimonials) {
         ]
     });
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const bars = document.querySelector(".bars");
+    const mobNav = document.querySelector(".mob-nav");
+
+    bars.addEventListener("click", function () {
+        mobNav.classList.toggle("active");
+    });
+});
+
+
+

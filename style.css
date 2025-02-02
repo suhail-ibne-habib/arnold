@@ -588,6 +588,10 @@ form input[type="button"]{
     gap: 10px;
 }
 
+.gap-30{
+    gap: 30px;
+}
+
 .gap-40{
     gap: 40px;
 }
@@ -724,9 +728,65 @@ footer .socials li a:hover{
     display: none;
 }
 
+.block{
+    display: block;
+}
+
 #who-we-are .container{
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Header  */
+
+.header-btn{
+    width: 191px;
+    height: 54px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #9888F4 0%, #715DE3 100%);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;    
+    cursor: pointer;
+    border: 0;
+}
+
+/* .header-nav .nav-lists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+} */
+
+.header-nav .nav-lists .nav-list .nav-link{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+
+.mob-nav{
+    height: 0px;
+    top: 80px;
+    left: 0;
+    background-color: #F9F8F5;
+    overflow: hidden;
+    transition: height 0.2s ease-in-out;
+    z-index: 11111;
+}
+
+.mob-nav.active{
+    padding: 40px 20px;
+    height: auto;
 }
 
 @media (min-width: 640px) {  /* sm */
@@ -738,7 +798,8 @@ footer .socials li a:hover{
         display: block;
     }
 
-    .sm\:none { display: none };
+    .sm\:none { display: none; }
+    .sm\:none { display: block;}
 
     .testimonial{
         padding-left: 20px;
@@ -899,6 +960,7 @@ footer .socials li a:hover{
     }
 
     .md\:none { display: none; }
+    .md\:block{ display: block; }
 
     .testimonial{
         padding-left: 20px;
@@ -1048,6 +1110,7 @@ footer .socials li a:hover{
     }
 
     .lg\:none { display: none; }
+    .lg\:block{ display: block; }
 
     .testimonial{
         padding-left: 30px;
