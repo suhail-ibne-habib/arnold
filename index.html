@@ -27,8 +27,15 @@
                 <!-- Navigation  -->
                  <nav class="header-nav none md:block">
                     <ul class="nav-lists flex items-center justify-center gap-30">
-                        <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-list"><a href="#" class="nav-link">Digital Marketing </a></li>
+                        <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-list relative has-sub-menu">
+                            <a href="#" class="nav-link flex items-center gap-10 ">Digital Marketing <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="absolute sub-menu">
+                                <li class="sub-menu-item">
+                                    <a href="paid-advertising.html" class="sub-menu-link">paid advertising</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="nav-list"><a href="" class="nav-link">Technology</a></li>
                         <li class="nav-list"><a href="" class="nav-link">About</a></li>
                         <li class="nav-list"><a href="" class="nav-link">News</a></li>
@@ -407,52 +414,63 @@
       <!-- Request a quote -->
 
       <section>
-            <div class="container rounded-sm mx-auto bg-222 p-20 sm:p-50">
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-default">
 
-                    <div class="column flex flex-column gap-default color-white">
-                        <p class="font-sm inter-regular color-primary">contact us</p>
-                        <h1 class="font-36 poppins-semibold">Request A Quote</h1>
-                        <p class="color-A2A2A2 inter-regular font-sm line-height-1-5">We help businesses grow, convert, present and reach the relevant audience and area through our talented professionals. 
-                            <br>Lets dive into explore power of busuiness through technology
-                        <br>call <span><i class="fa-solid fa-phone-flip"></i></span> <span class="color-primary">+1 111-1111-111</span></p>
-                        
-                    </div>
+            <div class="container mx-auto">
 
-                    <div class="column flex flex-column">
-                        <form action="" class="flex flex-column gap-40">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-default">
-                                <input type="text" name="name" placeholder="Name" id="">
-                                <input type="text" name="company" placeholder="Company Name" id="">
+                <div class="column">
+                    
+                    <div class="rounded-sm bg-222 p-20 sm:p-50">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-default">
+        
+                            <div class="column flex flex-column gap-default color-white">
+                                <p class="font-sm inter-regular color-primary">contact us</p>
+                                <h1 class="font-36 poppins-semibold">Request A Quote</h1>
+                                <p class="color-A2A2A2 inter-regular font-sm line-height-1-5">We help businesses grow, convert, present and reach the relevant audience and area through our talented professionals. 
+                                    <br>Lets dive into explore power of busuiness through technology
+                                <br>call <span><i class="fa-solid fa-phone-flip"></i></span> <span class="color-primary">+1 111-1111-111</span></p>
+                                
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-default">
-                                <input type="text" name="email" placeholder="Email" id="">
-                                <input type="text" name="phone" placeholder="Phone Number" id="">
+        
+                            <div class="column flex flex-column">
+                                <form action="" class="flex flex-column gap-40">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-default">
+                                        <input type="text" name="name" placeholder="Name" id="">
+                                        <input type="text" name="company" placeholder="Company Name" id="">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-default">
+                                        <input type="text" name="email" placeholder="Email" id="">
+                                        <input type="text" name="phone" placeholder="Phone Number" id="">
+                                    </div>
+                                    <p class="inter-regular font-14 color-white capitalize">which services do you like?</p>
+                                    <select name="services" id="">
+                                        <option value="web-devlopment">Web Devlopment</option>
+                                        <option value="web-design">Web Design</option>
+                                    </select>
+                                    <textarea name="message" row="5" placeholder="Your Message" id=""></textarea>
+                                    <div class="confirm flex items-center">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                                        </label>
+                                        <p class="inter-regular font-12 color-white ml-1">I would like to receive the newsletter.</p>
+                                    </div>
+        
+                                    <div class="btn-wrapper">
+                                        <input type="button" value="Get a free quote">
+                                    </div>
+                                </form>
                             </div>
-                            <p class="inter-regular font-14 color-white capitalize">which services do you like?</p>
-                            <select name="services" id="">
-                                <option value="web-devlopment">Web Devlopment</option>
-                                <option value="web-design">Web Design</option>
-                            </select>
-                            <textarea name="message" row="5" placeholder="Your Message" id=""></textarea>
-                            <div class="confirm flex items-center">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox">
-                                    <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                </label>
-                                <p class="inter-regular font-12 color-white ml-1">I would like to receive the newsletter.</p>
-                            </div>
-
-                            <div class="btn-wrapper">
-                                <input type="button" value="Get a free quote">
-                            </div>
-                        </form>
+        
+                        </div>
                     </div>
 
                 </div>
 
+
+
             </div>
+
       </section>
 
       <!-- Footer  -->

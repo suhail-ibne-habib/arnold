@@ -31,12 +31,25 @@ if (testimonials) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const bars = document.querySelector(".bars");
-    const mobNav = document.querySelector(".mob-nav");
-
-    bars.addEventListener("click", function () {
-        mobNav.classList.toggle("active");
-    });
+    if( bars ){
+        const mobNav = document.querySelector(".mob-nav");
+    
+        bars.addEventListener("click", function () {
+            mobNav.classList.toggle("active");
+        });
+    }
 });
 
+const hasSubMenus = document.querySelectorAll('.has-sub-menu')
+
+if( hasSubMenus ){
+    hasSubMenus.forEach( (item) => {
+        const subMenu = item.querySelector('.sub-menu')
+
+        item.addEventListener('click', ()=>{
+            subMenu.classList.toggle('active')
+        })
+    })
+}
 
 
